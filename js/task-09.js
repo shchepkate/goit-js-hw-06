@@ -9,9 +9,10 @@ body.classList.add('background-color');
 
 
 function bodyChangeColor (event) {
-  bcgColorName.textContent = getRandomHexColor();
+  const randomBackgroundColor = getRandomHexColor();
+  bcgColorName.textContent = randomBackgroundColor;
   console.log(bcgColorName.textContent);
-  body.style.backgroundColor = getRandomHexColor();
+  body.style.backgroundColor = randomBackgroundColor;
   console.log(body.style.backgroundColor);
 }
 
